@@ -1,0 +1,89 @@
+<!--created by prashant shukla-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ping Pong</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+     
+        <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>   
+
+    </head>
+        <body background="bg.png">
+            <center>
+              <div class="btn btn-primary heading">
+                <h3>AI Ping-pong Game</h3>
+                <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Instructions</button>
+              </div>
+              <br>
+              <br>
+              <button class="btn btn-success" onclick="start_game()" id="start">Play Game</button>
+              <br>
+              <br>
+              <h3 class="btn btn-warning" id="status"></h3>
+              <br>
+              <br>
+              <br>
+              <div id="canvas"></div>
+              <button class="btn btn-warning" onclick="restart()">Resart Game</button>
+            
+            <div id="myModal" class="modal fade " role="dialog">
+              <div class="modal-dialog modal-lg ">
+            
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title"> Instructions</h4>
+                  </div>
+                  <div class="modal-body">
+                    <div class="instruction_div"> 
+                   <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                  
+                    <div class="carousel-inner" style="text-align: center;">
+                      <div class="item active" style="text-align: center;">
+                        <img src="step-1.png" alt="Step 1">
+                      </div>
+                  
+                      <div class="item" style="text-align: center;">
+                        <img src="step-2.png" alt="Step 2">
+                      </div>
+                  
+                      <div class="item" style="text-align: center;">
+                        <img src="step-3.png" alt="Step 3">
+                      </div>
+
+                      <div class="item" style="text-align: center;">
+                        <img src="step-4.png" alt="Step 4">
+                      </div>
+
+                      <div class="item" style="text-align: center;">
+                        <img src="step-5.png" alt="Step 5">
+                      </div>
+                    </div>
+                     <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
+                  </div>
+                  </div></div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+            
+              </div>
+            </div>
+          <footer class="footer">Developed by Sanjuktha Reddy Enumula</footer>    
+            </center>
+              </body>
+        <script src="main.js"></script>
+</html>
